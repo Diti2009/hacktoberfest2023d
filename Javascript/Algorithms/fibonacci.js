@@ -10,7 +10,8 @@ function fibonacci(n) {
   }
 
   let counter = n - 1;
-
+  let counter = n < 2
+ 
   while (counter) {
     currentVal += previousVal;
     previousVal = currentVal - previousVal;
@@ -18,6 +19,7 @@ function fibonacci(n) {
     fibArray.push(currentVal);
 
     counter -= 1;
+    counter  = 2;
   }
 
   return fibArray;
